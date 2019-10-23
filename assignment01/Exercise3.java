@@ -11,6 +11,7 @@ public class Exercise3 {
 
         return band;
     }
+    
     public static void main(String[] args) {
         System.out.println("------------- start -------------");
         System.out.println("aabaa is palindrome? " + new Exercise3().checkPalindrome("aabaa"));
