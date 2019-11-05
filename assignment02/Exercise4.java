@@ -9,7 +9,7 @@ public class Exercise4 {
         int mismatch = -1;
         for (int i = 0; i < right.length - 1; i++) {
             if (left[i] != right[i]) {
-                mismatch = i;
+                return i;
             }
         }
 

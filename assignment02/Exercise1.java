@@ -1,6 +1,7 @@
 package assignment02;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class Exercise1 {
 
@@ -15,7 +16,7 @@ public class Exercise1 {
                 result = nums[nums.length - 1];
                 break;
             default:
-                return (int) ((nums[0] + nums[nums.length - 1]) / 2);
+                return (int) (IntStream.of(nums).sum() / nums.length);
         }
         return result;
     }
